@@ -1,0 +1,94 @@
+{
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "docker.io/library/swarm-latest",
+ "spdxVersion": "SPDX-2.2",
+ "creationInfo": {
+  "created": "2022-10-05T17:40:46.148715Z",
+  "creators": [
+   "Organization: Anchore, Inc",
+   "Tool: syft-0.57.0"
+  ],
+  "licenseListVersion": "3.18"
+ },
+ "dataLicense": "CC0-1.0",
+ "documentNamespace": "https://anchore.com/syft/image/docker.io/library/swarm-latest-696fb1aa-4a13-41c2-a9dd-9748a3858106",
+ "packages": [],
+ "files": [
+  {
+   "SPDXID": "SPDXRef-d324d9cc0bd75178",
+   "comment": "layerID: sha256:9c4e304108a9b2983f0c010d35af69e829db8efb2597512f516899af5f691804",
+   "licenseConcluded": "NOASSERTION",
+   "fileName": "/etc",
+   "fileTypes": [
+    "OTHER"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-e1a13d411fa6b3a7",
+   "comment": "layerID: sha256:9c4e304108a9b2983f0c010d35af69e829db8efb2597512f516899af5f691804",
+   "licenseConcluded": "NOASSERTION",
+   "fileName": "/etc/ssl",
+   "fileTypes": [
+    "OTHER"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-5a61b35b352dd163",
+   "comment": "layerID: sha256:9c4e304108a9b2983f0c010d35af69e829db8efb2597512f516899af5f691804",
+   "licenseConcluded": "NOASSERTION",
+   "fileName": "/etc/ssl/certs",
+   "fileTypes": [
+    "OTHER"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-c98342aa6b792de",
+   "comment": "layerID: sha256:9c4e304108a9b2983f0c010d35af69e829db8efb2597512f516899af5f691804",
+   "licenseConcluded": "NOASSERTION",
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "d465a5ce7dfa2fded69611a014df0d528021a63f8c171d422d8eec20abba6419"
+    }
+   ],
+   "fileName": "/etc/ssl/certs/ca-certificates.crt",
+   "fileTypes": [
+    "TEXT"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-2f7027b0d59bd0f0",
+   "comment": "layerID: sha256:6104cec23b11f71021549b42dd3f5a4d10f3f6bc326c1d1ca81c1594ace2f5b7",
+   "licenseConcluded": "NOASSERTION",
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "41ffbd4b31b7c0811b0af012b148118c8b6ae5f7bcd664bf2c6e9672071fe6a8"
+    }
+   ],
+   "fileName": "/swarm",
+   "fileTypes": [
+    "APPLICATION",
+    "BINARY"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-b612dcc9425057f5",
+   "comment": "layerID: sha256:a8731583ab53b13011872bb9c665f78e2f5491c5dcfd74941e1dcbb766f38f7c",
+   "licenseConcluded": "NOASSERTION",
+   "fileName": "/tmp",
+   "fileTypes": [
+    "OTHER"
+   ]
+  },
+  {
+   "SPDXID": "SPDXRef-5d2d2c103ce759bc",
+   "comment": "layerID: sha256:a8731583ab53b13011872bb9c665f78e2f5491c5dcfd74941e1dcbb766f38f7c",
+   "licenseConcluded": "NOASSERTION",
+   "fileName": "/tmp/.dummy",
+   "fileTypes": [
+    "OTHER"
+   ]
+  }
+ ]
+}
