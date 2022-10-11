@@ -20,7 +20,7 @@ scorecards_data= {
         ]
 }
 
-k8s_slsa_data = [
+k8s_versions = [
     "v1.25.2",
     "v1.25.1",
     "v1.24.1",
@@ -41,7 +41,16 @@ k8s_slsa_data = [
     "v1.23.10",
     "v1.23.11",
     "v1.23.12",
-        ]
+]
+
+k8s_slsa_data = k8s_versions
+
+containers_data= {
+        "k8s.gcr.io/kube-proxy": k8s_versions,
+        "k8s.gcr.io/kube-controller-manager": k8s_versions,
+        "k8s.gcr.io/kube-apiserver": k8s_versions,
+        "k8s.gcr.io/kube-scheduler": k8s_versions,
+}
 
 def scorecard_cmd(repo, commit, fdir):
     fpath = path.join(fdir, 'scorecard-{}-{}.json'.format(repo.split('/')[-1], commit))
@@ -61,10 +70,21 @@ def kube_slsa_cmd(version, fdir):
     subprocess.call(cmd, shell=True, stdout=f)
     f.close()
 
+def syft_spdx_cmd(container_path, tag, fdir):
+    fpath = path.join(fdir, 'syft-spdx-{}:{}.json'.format(container_path.replace('/','-'), tag))
+    cmd = "syft -c config/syft.yaml packages {}:{} -o spdx-json | jq".format(container_path, tag)
+    print_msg(fpath, cmd)
+
+    f= open(fpath, 'w')
+    subprocess.call(cmd, shell=True, stdout=f)
+    f.close()
+
+
 def main():
     if not path.isdir(BASE_PATH):
         mkdir(BASE_PATH)
 
+    do_spdx()
     do_k8s_slsa()
     do_scorecards()
 
@@ -84,6 +104,16 @@ def do_k8s_slsa():
 
     for version in k8s_slsa_data:
         kube_slsa_cmd(version, subpath)
+
+
+def do_spdx():
+    subpath = path.join(BASE_PATH, "spdx")
+    if not path.isdir(subpath):
+        mkdir(subpath)
+
+    for container_path in containers_data:
+        for tag in containers_data[container_path]:
+            syft_spdx_cmd(container_path, tag, subpath)
 
 
 def print_msg(path, cmd):
