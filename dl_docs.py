@@ -20,23 +20,74 @@ scorecards_data= {
         ]
 }
 
+k8s_slsa_data = [
+    "v1.25.2",
+    "v1.25.1",
+    "v1.24.1",
+    "v1.24.2",
+    "v1.24.3",
+    "v1.24.4",
+    "v1.24.5",
+    "v1.24.6",
+    "v1.23.1",
+    "v1.23.2",
+    "v1.23.3",
+    "v1.23.4",
+    "v1.23.5",
+    "v1.23.6",
+    "v1.23.7",
+    "v1.23.8",
+    "v1.23.9",
+    "v1.23.10",
+    "v1.23.11",
+    "v1.23.12",
+        ]
+
 def scorecard_cmd(repo, commit, fdir):
-    cmd = ' '.join(["scorecard", "--repo={}".format(repo), "--commit={}".format(commit), "--format=json"])
     fpath = path.join(fdir, 'scorecard-{}-{}.json'.format(repo.split('/')[-1], commit))
+    cmd = ' '.join(["scorecard", "--repo={}".format(repo), "--commit={}".format(commit), "--format=json"])
+    print_msg(fpath, cmd)
+
     f = open(fpath, 'w')
     subprocess.call(cmd,shell=True, stdout=f)
     f.close()
 
+def kube_slsa_cmd(version, fdir):
+    fpath = path.join(fdir, 'kube-slsa-{}.json'.format(version))
+    cmd = "curl -sL https://dl.k8s.io/release/{}/provenance.json | jq".format(version)
+    print_msg(fpath, cmd)
 
-if not path.isdir(BASE_PATH):
-    mkdir(BASE_PATH)
+    f= open(fpath, 'w')
+    subprocess.call(cmd, shell=True, stdout=f)
+    f.close()
+
+def main():
+    if not path.isdir(BASE_PATH):
+        mkdir(BASE_PATH)
+
+    do_k8s_slsa()
+    do_scorecards()
+
+def do_scorecards():
+    subpath = path.join(BASE_PATH, "scorecard")
+    if not path.isdir(subpath):
+        mkdir(subpath)
+
+    for repo in scorecards_data:
+        for commit in scorecards_data[repo]:
+            scorecard_cmd(repo,commit,subpath)
+
+def do_k8s_slsa():
+    subpath = path.join(BASE_PATH, "slsa")
+    if not path.isdir(subpath):
+        mkdir(subpath)
+
+    for version in k8s_slsa_data:
+        kube_slsa_cmd(version, subpath)
 
 
-scorecard_path = path.join(BASE_PATH, "scorecard")
-if not path.isdir(scorecard_path):
-    mkdir(scorecard_path)
+def print_msg(path, cmd):
+    print("creating file: {}, cmd: {}".format(path, cmd))
 
-for repo in scorecards_data:
-    for commit in scorecards_data[repo]:
-        scorecard_cmd(repo,commit,scorecard_path)
-
+if __name__ == "__main__":
+    main()
