@@ -1,0 +1,946 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "predicateType": "https://slsa.dev/provenance/v0.2",
+  "subject": [
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/apiextensions-apiserver",
+      "digest": {
+        "sha1": "800b8bdafce0d9f9ceb759c676f05ddf462f5318",
+        "sha256": "4a9184f012c85fae82a995c844d09f0d8af9d1dea2e1a32b2c627c6558db5164",
+        "sha512": "cbe90311881756de19d255e5cbe80230ff97ad547e753e4f3843aa42e776fdc96e539ef87dc5c8f5723d7522ff38bfc624841a391af1e4f34d8d59bd94ab68fe"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-controller-manager",
+      "digest": {
+        "sha1": "eb058de458a51c3a71737679bcf317be4f99bd47",
+        "sha256": "dc8a92f9bd2292c07d3944fc38e6c9743d4de3a2baba8fbf9ede1de5a371165e",
+        "sha512": "38f1f51205a83ec02c6b2827a7f75f909a9ef8254821a06fa991f1963f0436de3d3a83987f3846713f129b53969789957bdf6148293aa72863006323a3c28943"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kubectl",
+      "digest": {
+        "sha1": "116d27d6b40337521e955d0c13622395bcf9dca8",
+        "sha256": "4a76c70217581ba327f0ad0a0a597c1a02c62222bb80fbfea4f2f5cb63f3e2d8",
+        "sha512": "4ac1f8dd8cb52addfd2bd8547be8bd29d941d4bc672d526d6d05c49a6e91b113e2da27a17aa6081dc8127d555e22546d3628c57ef593cef9dff7b6f7bf6f5519"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kubelet",
+      "digest": {
+        "sha1": "3cb2f201eca7f3347181bbe52f76d31c37947b7c",
+        "sha256": "601382d365ccfe4ea1a6d95fd8ad1074f041d06893a31f0bdf9073c560cf9faf",
+        "sha512": "8bc086c953b76095457487efb28bee3c4f80713252418b693f7bd8ec314cb60482f51955a8eabc206ee0c28530281c2e7b391c33cfa095b989de0b777edb99bd"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-windows-amd64.tar.gz",
+      "digest": {
+        "sha1": "767376355f7cd73be561a57fbfe4df169aff58de",
+        "sha256": "69bf8278eecb30535b1a48def4cc56863f081a94487b3682e2123d87867317e8",
+        "sha512": "6a238c5ea243414673db9578a373b32e42f69b8e6fee24f418cfbfd269a36cbc0cbf2494bf2d2eaa6566f79347e0073941719f19db6e5ba8cea55d72ed523321"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kubeadm",
+      "digest": {
+        "sha1": "02b3d8ca90879ee5f237be6a755496f8b8186e65",
+        "sha256": "9ec08e0905c0a29a68676ba9f6dd7de73bef13cfa2b846a45e1c2189572dc57c",
+        "sha512": "1a8550b90b5c558cc7b53401799fdc903fd96b9c67f7ad67b35b40cbd21818994521e3ca8bb3206b50b2d42e9f0d47909df3349804bf334a993172e2c6d67278"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-server-linux-amd64.tar.gz",
+      "digest": {
+        "sha1": "815bdcf6b533453e416d654095ce3ccaf17bef57",
+        "sha256": "8304ff9b98a6f8aac4a4d816949540539c964e733a5695e6cf33f7e9feae68e2",
+        "sha512": "d3ec58f77eb177f7bbc13b693da6fd52be2388db27e870fb7de163e54a9250290a58adb6e80518b447187de193c2f6227675ff792484486916c775664f2d1566"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-arm64.tar.gz",
+      "digest": {
+        "sha1": "2f3fe3d7fc672ec0d012f8fd972c79e2fe55789d",
+        "sha256": "9057954a68a0c64290be235c2d790db11e748d1f95d74b9d5ca8f2968687f797",
+        "sha512": "573dd2b3be335bff6b019cac779c0e0bacb2fb011e5f4802f5bb6723c2fd5c5caf33df09a7387cc04672887809a58a402dc6bbe2e7e1b2003fa3d837fe9471b7"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/apiextensions-apiserver",
+      "digest": {
+        "sha1": "da4ecdac46c12f2a8e797cb30b510a6f4325c03b",
+        "sha256": "cf96e3ca0f9dcc3fc434c891c94e60c5f6d6d9880584e07b7ef82127b37fb332",
+        "sha512": "df2d16e56f71f874d3bbdf55c6d1b465ca89b7bfdd8f6c1cd8e7d4555de9ebf5191b955f8c1f52fcfbce28b41b244a06813ee9145dfe7272108ec52e58a85776"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubectl.exe",
+      "digest": {
+        "sha1": "e0a533436a0a16e0cbc255be01494125075968b5",
+        "sha256": "a911038481b9642c188252760ba343615c0ac25ce23f4078c9b09fdbab7f220e",
+        "sha512": "e3ffdc0be017ecf015abb1072a515e34f988a1499212a1b8a70979d6880e885773b0ceb643826199d57edce33b038ec9e2d4278618a5173fc1f027d14f00d364"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kubectl",
+      "digest": {
+        "sha1": "81a5337e397a0fbae8d9c51bf5d4e430fdd7d29e",
+        "sha256": "cfd7151471dd9878d48ab8d7bc3cf945c207e130568ee778f1aed9ceb84afd44",
+        "sha512": "c40525db9b72c92a9d8c6b66090aa2947f4df75ffe73b29aed56fdd3d693e26153bee109822d2e28948315ebf33655c58400e4d8214baeb597711cb10ee4a1bd"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-apiserver",
+      "digest": {
+        "sha1": "21ca0a79b67ddfddc78667f5cfd1ab7072cbe3d0",
+        "sha256": "647c0dd8abba886771285907be0c0bb6a34514b69a5a1b53a8b911d886da33e1",
+        "sha512": "b902eed0209575919aa083e84cd762c8402eb2adda40a87d5f1f99935385d95c24319d7322fb5d9d22c21f8adfd5c0c8436190eb9d9df3f6798747730ecfa882"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kubectl",
+      "digest": {
+        "sha1": "548bfde889c5773fb00b4ef92f2ff75791ac52f2",
+        "sha256": "cda438467e53c2972d6c7cb64b5f4d225cf22497d25851d46155f0bad26d4137",
+        "sha512": "ca4653275170922198347b78b866d526d2e4165085439cd3a57100585b551e9dc9aceba6cc5636d9faf6419f54725cac51b7db6ca33bb903bf5c4ec363f40790"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kubelet",
+      "digest": {
+        "sha1": "301079fa0c18ceccb5bdf30de0c71cbe62295678",
+        "sha256": "0f34d12aaa1b911adbf75dd63df03d0674dde921fa0571a51acd2b5b576ba0a4",
+        "sha512": "8dd4896c377a36012b04f02875633da421c8045bedf14430a2b5dcc3a062fa229cb273b17eccc750a8f778afc092a290e5de09f1242fdea9c145397c0599c57a"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/arm64/kubectl-convert.exe",
+      "digest": {
+        "sha1": "458021a0321fdfca75492e1feb1862cce6a4ed0c",
+        "sha256": "f17811d45bf6d9c93395dbd4b0348026cf59735ad49b3ed74980bb446a0ed902",
+        "sha512": "cc7265d1d8fec31434ed31f3fa2b6e1d90eb22ba135ad39d488ee32eeb6076a5360382336d9d0b942896c0a3d1a06ca7c0aa6df36232df52e1b4033f89a62bef"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/mounter",
+      "digest": {
+        "sha1": "950edaa1cf39f22faadef0572a14fc741a8ec405",
+        "sha256": "fcf81e18b391ec703d56a4b8110587b70bc814e233f47972124af42e39ab6b3c",
+        "sha512": "287ce4240dec582127c66b22824dcb00e642453ff72bb5c8ff423bdfb10b51ede4b182bebb4a2f796d2f77ccc0eff9a7b3f31045f3116c611160937d22f70a9a"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes.tar.gz",
+      "digest": {
+        "sha1": "aee4ea50565af041d17ca318ca9dda2b0ee2428e",
+        "sha256": "573f0a6094391097162790c4b0b218e2afea36a304cd781be88f2224ce01374f",
+        "sha512": "0653371379d24dc27fe6fa2dccc9dbec42d1e25f5a252a1d6479171dda92a79c445e1ed80417639e18a080412280dcb9b1f3ad96762db909e8dd22edf8d9eb09"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kube-log-runner.exe",
+      "digest": {
+        "sha1": "bf5d6b7601c38a30f17cd20a4c510a55c9205edb",
+        "sha256": "f65ae2ffeb930ab581265322238c35b658ce39fa1cf7b77087fb3de26192853b",
+        "sha512": "79bd11fdf645ed893e4192ef5e977e65d10994f8fd26172e69501051c034723984b869c6bb3ef9404b890d4524258ab5383a140d1c557d0eb2c00d20d08583ae"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-scheduler",
+      "digest": {
+        "sha1": "56ba784763290c8beea2e0b1222791f1c1b7823c",
+        "sha256": "6f077e2483e540e47e8cd92ac7a16779b213b9132f85ac136d15130fabb8f5b6",
+        "sha512": "663cb3ed5c3a53d3d36a16c90acdbaae78d3bf7786f94165d394d9d4d53435b3ec926252856fb9da80aa2871025918a9581458c5c79ef4b7e6e830e5273abcb3"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-linux-s390x.tar.gz",
+      "digest": {
+        "sha1": "0242e04e5914c8930bbd33d23972287e41ee9f78",
+        "sha256": "79eaa059c9a1d16c40cb79f565090668f0e4cd917405a33d8bb491e52944a1a5",
+        "sha512": "bffff5f4e535270bb20f8cd3f346940d7c0f9382a91e6d1764b56487b7e382a9705320057202e37bc09f08336deceaa78277588f32a2965369e07a2260c29dd7"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-linux-ppc64le.tar.gz",
+      "digest": {
+        "sha1": "5372332f59f31fb4ab54ca544b42bbd436f13207",
+        "sha256": "fc9f1f01755d22f734955d1e9d76e1a22bf2ba6eb3743f59ee6ec0a12ad62b39",
+        "sha512": "1956421f15c63b20fa6dcfdb41e604cb4778279aa078799c1a646de890ec477c3bdd9f4f1581730322a96ada6b65e79e40a01f22260933314163c075e194124e"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kubectl-convert",
+      "digest": {
+        "sha1": "c446b8cec0c87a93348a12ef9b01a20170eb6898",
+        "sha256": "42433db93568fea99182992d8bf57e8609fa69600bb108b40955c639a331b791",
+        "sha512": "97cf08758f256f0447fb7d89f6d39580e9aa6e3b81a2c41b1f2d117a2bd80e8b6528afa7a6f868a381d4fa59df8e263a94f76d14531729e0f7851548dd4c5701"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-controller-manager",
+      "digest": {
+        "sha1": "d9eb7acb09c8b610ff9197bd2ec9476f1cb182e3",
+        "sha256": "c0d42cd398a629ef68a12ca3601dedfd0dffe1c09f24b68dae2eae768add458f",
+        "sha512": "43f97811c777707316dd4247502152547eea41e65197709cc523be9c237b9b93cc376a5d202c0cafac6c9e93d5195f53a5dc5492f8db5153dc1beff5f9ee22e5"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-log-runner",
+      "digest": {
+        "sha1": "5fe5064ae9ce33b895f6fe48ea00c34bec9b0f61",
+        "sha256": "02403d8aa8adf45b2821729a580fd73a1bfb15df607b6c812b333da5793a8554",
+        "sha512": "bf98b9491c670846c2b49a8fb2a3cfaa0674badd76abec4a37bd0ce2f33fbef1b6124efa85141110053598c2611c141f10ac5e95ff2ee3d5daae2875400d5e82"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-windows-arm64.tar.gz",
+      "digest": {
+        "sha1": "4407c9808f0a9bae8117d8fea3fd7f4fc5cc7ef3",
+        "sha256": "7990b90042c231ab7c1c367bc7026eb81c4407be46b922fd04c7dfc5b189430d",
+        "sha512": "5bc3e20e1bff89f1a643bbb604f44f3a5b42c894b8f1603d546d2fc38e4a300eee3012267fae5cfe4b34a67fb18e3e802903dbc0ea1b62e2f46ac1a5c8503f9f"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-darwin-arm64.tar.gz",
+      "digest": {
+        "sha1": "5de79e74f586bd8bed11ec3cf49d489120c9aafc",
+        "sha256": "5f9b3896c5bd0dd71334e102e92d08107ae7764ff2ba23a38bc7302f2dc28b98",
+        "sha512": "0db2fa6b402117ba04ba5ded555dc4a9c37ddb7ab1c99f5a35ee964a6c422c23d01354ff41ec196141ba146a0c9d24a9972bf521a03cae1c9d15dd108c282cb6"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubectl-convert.exe",
+      "digest": {
+        "sha1": "350142f5609bbf4a8184ebccd3489c290b0ad384",
+        "sha256": "b8bdafbffc3c411e4eb2feae3b397c1b9fa91452234ef8834e285a4d1b60a08a",
+        "sha512": "b3f82c3675962edbdd5f76c9ee159f9d476793ab61c1267c3948207c14168d33306668245942fd2214630d1b92ea797956037f567d0ed140d372cb08404f6bb8"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-s390x.tar.gz",
+      "digest": {
+        "sha1": "b806c86c62aa6ff1875eb914e14397e61c93e659",
+        "sha256": "3e2d427302065a3b759e2390bd840ddce172b3e8d0cd308d48c2795ad2ef7b3c",
+        "sha512": "fee902e98ad35eb203806ff56bd842ce141d4f35f3894a21d732152ed085533617890d757c4f6cfb17a1900693479d1401161281a104b9584527bce7080500d1"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/darwin/amd64/kubectl-convert",
+      "digest": {
+        "sha1": "2c33548212fb32d89bdb795baecc77b2449ed862",
+        "sha256": "9db92af33ab111e409dbae3b9a0673bcdad8f26be67c0a9269f62cc2a0d7484c",
+        "sha512": "cd6994418d2e34b1513f2ce292b0dcbca5f440aa2f5e2613ea0871f8d3aee5adc747642e71706632edf94e4cccfcd4199c5e3a3427de4c9e625fbe62a2786b57"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-aggregator",
+      "digest": {
+        "sha1": "bf33d011961c77bf6eace909a8673cc1ec9f1cb1",
+        "sha256": "8d38d9fa608b4d89515922d8348290a3e6bc14984f7a56d1241293f553b03bba",
+        "sha512": "c93cf6c848fe54ec81e61c5d907146534c22583200b2751ea190a085f32586ab1472fad0f3d8418678225bf93d1b36cd301789c8909b210652a544e2682a324e"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kubectl-convert",
+      "digest": {
+        "sha1": "e7567a81151687b340baad9f89cb6646b69270cb",
+        "sha256": "0365933553a04aa13c6044f20f388909bafaee79aa0142bd583d23709eccda88",
+        "sha512": "4bf24022e9699b5b1c868ba78ec41a6f8c75e8a034f240bf217588022a914a6eda82864fc8267480c572824ff9be7cff96ecd1d4ef27f0280a955e23225e97e7"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubeadm.exe",
+      "digest": {
+        "sha1": "a967a3ebc443a7d11af5541cc6ab803b2ee4058b",
+        "sha256": "2662378d54f885d083b9c6d77ec820b7b4ae6e35776196029d31bd8c68dc5f0a",
+        "sha512": "1cf360733bfabbd399185d7cae30c50dcaaae97d98bb603a074de4ddabddf4875f96cd7e7b89ffdef169f5dd093e6668e90322a2df1227e60f9c15e0386e4dee"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/mounter",
+      "digest": {
+        "sha1": "3a6bb1aebbd2fa2b3bff9714083b89edf257c600",
+        "sha256": "43f49c2383554fcd1ac2af82848518ed96a8456503b66e466b079cd37a47ddab",
+        "sha512": "df72b5075ec62147a4d315e8e203683b8732b49f45eb00cc5894a50b28245f8286b682785bccd9a070073f734f88842b39a908e17c809fa7b980b89076ea2c97"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-server-linux-s390x.tar.gz",
+      "digest": {
+        "sha1": "f66c939499b582dc7d82db93f631c9aecee493ea",
+        "sha256": "fbffb591deee3c68609d6ebd7c504d512a84f21085ef97b2899241d35114f17e",
+        "sha512": "dd72539deec368830108265ac4c217b2abef45bb6d486a7334e89f9fd24bf23b6b6f7dccdbf4145138b5eb2ce549442a3e2cc1d135f8b7c2b0779faafd6154c8"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kubelet",
+      "digest": {
+        "sha1": "b3a90784a8ffe9e79cc6855fbbfcb11facaee698",
+        "sha256": "f9d387c18159a4473e7bdc290780ba1b1c92e8d8b41f558c15ee044db54636cd",
+        "sha512": "26fc5bc37a520cced206eb286c791ff0f7f7fc2c66dcaeae08aecd1c5dab5a079b6d73d78b789da8439702c2d641bea21bf56dae19f1ddaee4f31d180beab82b"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-scheduler",
+      "digest": {
+        "sha1": "fb2cc202a8b52059606dfcb1de119a08f6603d4b",
+        "sha256": "78dde804bcbde1d061dbc82ea06a222df4fc144d51d7d75c185314e6642ed708",
+        "sha512": "f94bd6bf0141cadec2c522dad0207a6cc5235100e3978fa96fb57c9641edf9b8202653bba91d432debdf3e9b944b04abb4abe3cd9be8e31da3e4b5ceb3979899"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/386/kubectl",
+      "digest": {
+        "sha1": "c328f275e4d2b0a30ea30d5c888873070418b621",
+        "sha256": "2e8a002584045ea86834ce59d9f945ab9be7003d5f217eaa6f72654d84ca1b91",
+        "sha512": "fd751f7e6f3131f93d9f2e1a667678bb52bf5d9f7ab2e9490fc45697e725aa6d31bd07ce7abed7df05ce79ea121dd3f3e627cf0b83efd3fc8a505e4bba46c528"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kubeadm",
+      "digest": {
+        "sha1": "8e20db16dfbc2eab1667440d65054973032a935f",
+        "sha256": "00fe93a291ddca28188056e597fc812b798706ea19b2da6f8aaf688f6ea95c0e",
+        "sha512": "3ac32a1f65470c5f336e6d9886ad2f544afae9787dc58b527b8d637f00c4a4ff39c5e1e89f147becb7dc48bebae020b583e48d0f5a69610f5021221f36de8ddb"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-darwin-amd64.tar.gz",
+      "digest": {
+        "sha1": "ef7b71a8a8e72e67bdac121c12a033e1aec0972d",
+        "sha256": "deafa8d6ec8f37466380c426a64b82d2ca9201f38816595542185f8e257781af",
+        "sha512": "592715dd609e48392e9228979c85819507dd7f62cfcba16eecaea33e607de0c6f5bfa437299fd38b4848c41415bc8ce7f04078dfc91d99e9d7b5a0dde314455f"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-linux-ppc64le.tar.gz",
+      "digest": {
+        "sha1": "460605408b7de78ba0f92c274b8591e367f066e7",
+        "sha256": "ae2803350e9d312b636a8f97b04d5b926569439e686fb9fc8f0520519b5d5666",
+        "sha512": "2e65f6d7cf5b815b7d6bc2c1a965ec22cf83b4ea4e572f380bf83a6dbf15a4b2f4a1bae6d6f2d3b7745e300840abf6b5817f96eee3c3ea327d44934fbe0a375d"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-proxy",
+      "digest": {
+        "sha1": "2e39bd06ca1de9f0bac40b8e1caca734a9af7341",
+        "sha256": "5396c68a4188359b62a6acefa9d8594eb295cc2eb5552d19dd6e0822b327ae83",
+        "sha512": "66c14592cd59b96f735bd4f615f1aaeeb405e5e36ba9a412928b753e459e7556e8032d79d5df8592a0ab423f4322dda6b2ad7cff7d06c98df36224113b5f8a1d"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/arm64/kubectl.exe",
+      "digest": {
+        "sha1": "29a0a78d430edabb51528017fc1d088abb0c2f99",
+        "sha256": "5eed62b1d40a3fce342f7c36e278cf7a81122dd785d501850f8fa0687233a52b",
+        "sha512": "87f427d50d8cb4e7b31fbcf1b12b04a63b2819bc6cff94c931ddc4a862622dcfffc82575297ffd8794b098585911cbba7e082cfcae8996104fb4e68a6be31101"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kubectl",
+      "digest": {
+        "sha1": "d508c3a30fb8e3a36ac7207e3a637b2ac9c76048",
+        "sha256": "060c0bb55aa3284c489cf8224ab10296d486b5a2e7f3e5d6440c9382698bf68a",
+        "sha512": "5f7db2db750680932075eaea8e424851ec6c905d4fec496e2b720cee56d1fa23d446353f383e900b27abcf80dd5c9f23990a375f110082e84d7c97504d9d63aa"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kubeadm",
+      "digest": {
+        "sha1": "6d07fabbbb9ab1a395b8048f22434dccaa9ff706",
+        "sha256": "18de228f6087a2e5243bffcd2cc88c40180a4fa83e4de310ad071b4620bdd8b6",
+        "sha512": "1cb86ed3cd1eb93f3e9433123de7c5ef3a2e028b1eead0af18b4f9074715a1b95a51e48e608440269509ac7e8e052ecce4d474efc58b360c96f29ef64ec44d90"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-apiserver",
+      "digest": {
+        "sha1": "7972672e88487728928e52fd19eafeb9bca71d28",
+        "sha256": "f2f8edbbd8319005a325d551440db6ae634e8a5aba7fe9aae0077217e1d75c44",
+        "sha512": "bb36bddec4d657b4f04bad63c758c34fd1c0456e5dfe0a03eec3d7d8e5cbe185d12d5b28aac7ac1703b52bc88e50286e59c78db4cd1076f1e36da14600dd2b1c"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-proxy",
+      "digest": {
+        "sha1": "7fb88374962e9ea0fedbaff8fc5fbe6042fd17c9",
+        "sha256": "f9e804dda6156fe97b9ece952ae9e6b7046de235c2f6f716e268e7703bcb7c15",
+        "sha512": "4b1e56c6ff7b9ef269d105d18e3608b7ba1971955a2e7df246b98882457200d6c61e945dd198a4b885aca58ef344a45d975671504c97ba22455291733fc5ede0"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/darwin/arm64/kubectl",
+      "digest": {
+        "sha1": "09f1795265af5d3fa2e7d5218fe025455b11f336",
+        "sha256": "791f748ffb25c4a156d67237052de65808638c7c2006dd01f57ca2f94206d039",
+        "sha512": "ca81f4acac0f8210ec732dee411322138598deced2f6d455b329ff1dc4c2ff9bb6b74eab2c6e05f45e1593264a1ea1ddbd054a43f7f31009f3aafce8354ace31"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-linux-arm64.tar.gz",
+      "digest": {
+        "sha1": "8745fd1eb144aada74151eca3be3a8559e80ae72",
+        "sha256": "30ef22e08713cabdcb36cce69f28048f2e360e438ecea5a57f05fd651a6ec970",
+        "sha512": "5c1099e4291e01fad9fe97ceedc23a53e601b4ff73c37ea2e6b92fb8a9f74b5f5084eca136da392e1789080fb89ea9474c28e893d49513a1a4cc57624b274a0b"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubectl.exe",
+      "digest": {
+        "sha1": "e0a533436a0a16e0cbc255be01494125075968b5",
+        "sha256": "a911038481b9642c188252760ba343615c0ac25ce23f4078c9b09fdbab7f220e",
+        "sha512": "e3ffdc0be017ecf015abb1072a515e34f988a1499212a1b8a70979d6880e885773b0ceb643826199d57edce33b038ec9e2d4278618a5173fc1f027d14f00d364"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-log-runner",
+      "digest": {
+        "sha1": "0c6eccd8a4df357592f414eb23318b2da6ed81f6",
+        "sha256": "168cd8cec66f119eca8c342c1cc700644a4fa2b163776540aeb944649567fd99",
+        "sha512": "3989b4ce49eb50c104669da5149dcc37f1ece02f9f8950fa3a2fbb7f2640c2bf825358b93f7ca8ba3b738d1c114cdc7041f491ab6e355a7f8e046713f2dfe366"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-apiserver",
+      "digest": {
+        "sha1": "f4e0894adb7c9f1beee9ccfec2a9101546774423",
+        "sha256": "d97bb083978ebccd778c9ad144e5590fb9cab380b9bbc969a7a699ff4953d908",
+        "sha512": "698ac13fd598b0e51dfd8d51667833e925dd3738cb3804e5a8d6dbf81346ded3b552212b597c21d45cab0055ade0dcee1eaaf05e45586ea42bdc1202113ad321"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-amd64.tar.gz",
+      "digest": {
+        "sha1": "0745ab163538d399eab3ffe563ead606b62cb961",
+        "sha256": "cdb6a4919fae65b2beb10ade9e114742233b1f537b9cc52dfa5b012e9702c6a1",
+        "sha512": "ad4e57547bb5ef7e0e7a083bb9fa1d74fbd619252d413b1d556c8dc7836dcbad461376c36587a85df6540b04f87142fd99cd712ae0f4928f1b42d26b60bb2f15"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-ppc64le.tar.gz",
+      "digest": {
+        "sha1": "cf92e5a50127bee256c62b860f9c3b2152c76d56",
+        "sha256": "8e4ec7d19307829156790e2add10898458a6b5fc2e9a5444f6d0ad41e6163dab",
+        "sha512": "8844602f44646f0ebc99751f18d859c0f2d90c79aeb578823f0380ec08cf0930e7d91c2bd9565b70bb3339714b4e908c2961f8cb91ec67cc7b407b3f0d02c654"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/darwin/arm64/kubectl-convert",
+      "digest": {
+        "sha1": "322b3f191dfd5466d70182b3c67d8eb129a3a31d",
+        "sha256": "64c208b741378174b848d1c38dd16b2a588247f3b69a46a2d49ec17ce70b9072",
+        "sha512": "dfbd62a45d5cc24286b4d25cceaab1b3f4acfae1a8c7d85816c8cbcc5b7af887a7ca5f8770c61747923037c0a31ac244515ff776941f504536c1be520995bf84"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kubectl-convert",
+      "digest": {
+        "sha1": "ee8058cbe277e7b2b9b2a18de56c3c7d2c12f4bd",
+        "sha256": "0d341ca8c4d26f9afc15e56b3a8c69e893d198e390c3bf1579538d43dc107820",
+        "sha512": "e7f068253331172239ee9e58472697acfc787b44964b4bc3be4ea6d4d355ca6767ebdb380f90eef168f75ae914873aafb2aa42216b9cb20737426d34b059a887"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-log-runner",
+      "digest": {
+        "sha1": "00e7b85bad3350ac6fe5829b9374034a214fde95",
+        "sha256": "b12dafc0d04814a2f2ec8079eb777bdcbf4f4565f2411cb094734d95a690cf82",
+        "sha512": "909bd5901af83bd980e09b78945a7f298e9353927fea51ebdddb6b53e2858e6e2d06aaba8d7c61c1246e1651b036609047c9a04dc8c77e292ad0fed632c6ea3d"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-darwin-amd64.tar.gz",
+      "digest": {
+        "sha1": "ad340d4b9424fe5fc2912b0f59bc27fa367cc2e1",
+        "sha256": "74b65ad3b3a3f4ce2180572a760162050774610565054abe3c896079e4689575",
+        "sha512": "24fd6a8caf4496f3fbada2f4d902a8b72750a54f2bd71c9eb1b45bae2ba83dbd2f92304f2321577baa99f69d087240fb2757f5ee2a76ee4e223568cd32897265"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-server-linux-arm64.tar.gz",
+      "digest": {
+        "sha1": "e77b997d7d20d1a88e23a4eea09da1d372c12377",
+        "sha256": "30b1cdbae112595d846b7236d69ecd15323b08fc041b284a0e41842230d73c74",
+        "sha512": "ebbe69c15eab5dd87519485329cee8edd9afd90ad261788ef7b42d672c61bfe60086192896b9951d4c087478187069c009668f33c65450379aa0b6bda2a004af"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kubelet",
+      "digest": {
+        "sha1": "29d095706dd47f3abf54529a27942dbc54c21871",
+        "sha256": "2d9817c1e9e1edd9480aa05862ea6e9655a9512d820b1933175f5d7c8253ca61",
+        "sha512": "34af7d0a00de82b2d393ddaed8cd7fa0ce845d7f524d5e39c3dec6f8f6bfc244bce5bb69b5875a238348e3b2e0093bfe92dff19101d5a43c80f4fac343abe2b9"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubelet.exe",
+      "digest": {
+        "sha1": "ba6245697159b975105c3bae29ceacc2b299e28e",
+        "sha256": "06d0a00cf1b06417283a1992f75021609a1836c6727524f11e926caf40cc13c7",
+        "sha512": "fb7084dfbef2f6cfd2e500f3134411465ff6cf7bd0ea9867e977d003399fc993439f67ddcbd2910bf18f05d883822d872806781e3aac68836b617823e525bbe3"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-linux-amd64.tar.gz",
+      "digest": {
+        "sha1": "6f5470ff7d72cce27a638542dac2a892f3b8892b",
+        "sha256": "67f3e7eb551147c544513d9c35523f8c6007e1cd282cc30b92923ca431102dc3",
+        "sha512": "5dde6dfdf16ed4f64f34035c873b94353c854045053553118db2a578895b8ea6578e731ce7601efbc5016989a7acb5cdec58d655f2cbe1385aa0afd1e544ff9c"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-server-linux-arm.tar.gz",
+      "digest": {
+        "sha1": "580ca4e205dcc2d277a59ed3d3c1fbea27bce3fb",
+        "sha256": "c9cf77b6b1ee2bdecbfaf64e04ac14342ad6e2cd0b51a1ef346a0bf4a538cc5e",
+        "sha512": "9fdcf7b43f8dc1be0ade1636f6c766a2f38dd0173809a3e1a8055d6b0bb483169d9f1bd676b69389639672f19d5214200dbbff222d2226519ea29a357cfd33f8"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-aggregator",
+      "digest": {
+        "sha1": "154a4ac628caea51bee8c7001a44c3447e208e28",
+        "sha256": "082bac3ba0e2e91f302043ecb6b0f2f133541bdae63beac744b6b9e13ef79e99",
+        "sha512": "fcc65b5c4a6c54092f44eb3dfd54490772204779ddd0ff8e182bcc7dfae97a53739b274a15c980a666d000c3a43b1b2c3a599c725a396c248aec77360e86b46b"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-arm.tar.gz",
+      "digest": {
+        "sha1": "92abed1e4774c84548cdeda62f934aed7efd6ac7",
+        "sha256": "6369e94676657c448ab378223524dfdcab224ee082e93fc2bec87921c0bead95",
+        "sha512": "38ec67f5e44b8470f827a31b1dffc8d374872b68efff65c0e50786ff0755225f73fd999659282e3b9924f9c4d313586752f67ec4ecde2b4888e64c804e1cc854"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kubectl-convert.exe",
+      "digest": {
+        "sha1": "350142f5609bbf4a8184ebccd3489c290b0ad384",
+        "sha256": "b8bdafbffc3c411e4eb2feae3b397c1b9fa91452234ef8834e285a4d1b60a08a",
+        "sha512": "b3f82c3675962edbdd5f76c9ee159f9d476793ab61c1267c3948207c14168d33306668245942fd2214630d1b92ea797956037f567d0ed140d372cb08404f6bb8"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-apiserver",
+      "digest": {
+        "sha1": "2f7713c81a79678c338af737ab53124ce9b35e87",
+        "sha256": "f4ef9b3538b04b8eae88fa9348302b8377bca983547c76fd9f1155b453e08cd9",
+        "sha512": "555e128d09576c0a0b9a34b2b00188eb9c04758d2a31c1cc40a298b043fa0b1aa351dc9de93da7626d323fc8956b6eda2047d48e091e4ee561d731d77f6f0605"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-controller-manager",
+      "digest": {
+        "sha1": "4fb210f02c07c29c95c5976353464a9281c3a519",
+        "sha256": "db623e834aeac65e809303d2ed129a92b39e69de1b838fda385c4d610d2e79f3",
+        "sha512": "c6152d52cd9b9f8bfb210fc0fe45d39dfaf6f4f5fe6ebfc9276567410752508ec1754e0d54c1e46125f7577471ce0d8b5a28d974bc9e136ab446cb31130eeab2"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-linux-arm.tar.gz",
+      "digest": {
+        "sha1": "92f62a5dda34a49cc84e2c41e95ef711288d3d74",
+        "sha256": "de484dda70ae1299fc3a0d8ad4b3a7d32e54bbbd1c7a53722579c53551c3b517",
+        "sha512": "43279990da2d11bbdb606aa8d2355d3b47caec85a97d6e7f2dac08df9255755b757e6117962459893056fd4f96755fc200d6a9a1cee093be1c4d3d79b0d7f1e6"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kubectl-convert",
+      "digest": {
+        "sha1": "030c807245dfa4cb59313ff28fe8e33942f1d8ae",
+        "sha256": "ea47ba05198889d80bd7273e6961d6c72454f8376e814f84fa365aee288fc76b",
+        "sha512": "0b579045649691bdd68ae66b257183d21a21a9269128c1ae26751026dd38ad0e8e4057d39be193889b5ba30f9690cf91d30bd505d07651c11a8afa77e78dcd0e"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/386/kubectl.exe",
+      "digest": {
+        "sha1": "4ecd1db6fb8e28ed51a3879b6c86061abbf2a68b",
+        "sha256": "a090d3b1079800e78b5fc9c41d74e64d1fc71ecbebb729ac8bdf581f77fed6e4",
+        "sha512": "47ef87dfccb6ab58a73adbd87edad51871eb1da2fa0bcf71158d8de447a4e18fae653fc4eb7be61cb71d7f9b972c0168645e94dc45db9b9b38afa34dc5b9c2db"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-aggregator",
+      "digest": {
+        "sha1": "22ce517fdf6577ea783c9aeb697197e2fa9b7cd2",
+        "sha256": "236b7a59497bad4a96f4909c926fbdcf123a02afcdbf8514532e60674ecebbbb",
+        "sha512": "d4d103d1d865750a931937b8e1992d51bf9df948406ae8fb0e8a286816efcfc761d1c774e306d9b8613513cc8aa759ee2d3b4965c7d9a062aa0e9aebc8eec1d1"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/darwin/amd64/kubectl",
+      "digest": {
+        "sha1": "a57c71462b58379ec2da2383c76ff69b4368c35d",
+        "sha256": "adb6f4bd48a698547b0d48ea109d06c36367dcc507470072f1fe723d3c363f08",
+        "sha512": "fdb13c54d2e62265b4be767b7b1bab58b35c501423ffdb508edf023029781d18ff823baf4135ac69e983c7700f4e76318047d6396aff96d6a90d88da4f9a0939"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-linux-s390x.tar.gz",
+      "digest": {
+        "sha1": "b05da29cd2a603c0eee40e62d02a22fc9a85b228",
+        "sha256": "c914b3772d96f898afd58db0af99f99a242c1301dfb9376de5c8b200c2dabf03",
+        "sha512": "9b60031dbe3c6e08606e2e064eaf6e8ea1ef8c52dcd08507a128e78826732343207780e0496813b7a5c8e3bdab3d1c386aaa631fac1f33de22febcdf3b3111b5"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-manifests.tar.gz",
+      "digest": {
+        "sha1": "3adbc99da90bb1ff0008476eb2006440f7503439",
+        "sha256": "78e104c2bd4ac854dd13af1fdd5f2192223effbba8c71969051e694ca87bb253",
+        "sha512": "ec98e809d92274d6ee296d510cb36bb6d977e46f3e3244e407c92151c9a962b76bc1514dd96a75c9e83c04e0423215e95ee95dda80120f51586778cacf78ea2c"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/386/kubectl-convert.exe",
+      "digest": {
+        "sha1": "36a57e5fcb2e629ce83d155170f71166547281e1",
+        "sha256": "9defa34efa2beabac16efb08f85d7afc95225d6abd580b5156473c92b5c7026e",
+        "sha512": "f3369bcefea83abbdc8ed43d3ffc2bd4a46995b61757c3f2a1e70f9b68bcde5c28a7c058876ad94a76e45db2b36ccefd90f659b659d674fef8db05df78b623d7"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kubelet",
+      "digest": {
+        "sha1": "54471b67721deb22649bb74da3b7ba18d20530d1",
+        "sha256": "38475815448bd5d43e893b6a9ac9fd3ae8b0dbddf8a7ba92d3f83437b5c1b916",
+        "sha512": "264e506c0a8569a602f9037babe33c2ed3be68b62bfe49b8c87a823faad106d3645cfcc2cd38835ca666d5d1c9fd4342f5a751530e2b763a2e527e9cc3f4cf59"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kubectl",
+      "digest": {
+        "sha1": "cb8820e45c0db44df2953173883a6030a19c5d43",
+        "sha256": "0aa4a08ff81efe3fc1a8ef880ca2f8622e3b1f93bf622583d7b9bfe3124afe61",
+        "sha512": "34630128b4d1c11eda6f7e8f5b73ddfa292f65db48373c4e56cd8aa1f52d3e62549573b72dd9a56dae11837e401c8ecf8adc1a354f7a58afb2e32901f781baa4"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-scheduler",
+      "digest": {
+        "sha1": "6547c35c131e28e11c9d82f3e16732540bcb99dd",
+        "sha256": "4af0f2a0dfd7a9ecf7002ea5d57946f4508b84443d2ccc311d6b701e68c42393",
+        "sha512": "fad0e5da026cebe175f0fb316200d7e7594c1dfabacc1da8ecfa170f893ba165677ad4fb13e1ede24bc1880e5c398a7eff94b1ca1d48aa022460070d4ea3a7c7"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/mounter",
+      "digest": {
+        "sha1": "9331b20b4a3baa946ace8a3617fac4f6d114596b",
+        "sha256": "14da0dd36f23386a407ba7bc7d061939a59e6d2daad8248a7377223e1608b3cd",
+        "sha512": "6586419ca6406cfe4cd5e77b28bfaa9fb8123c709019d305cc22656eca4a1f5441e42e813112eb329160a0214dba711eb1d4304cffe3f6297b6af0d6d669aa7e"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-server-linux-ppc64le.tar.gz",
+      "digest": {
+        "sha1": "fae0de8f7dc1c4877f35ddce5340570a027f9eef",
+        "sha256": "6effe408671c5d7dc688af4da98e4e792458a19a1818ab67b14ed0e022d4d1a6",
+        "sha512": "9fb7514552b9ff0ed287067afe2244f52b06b79a61e637627250e0b3bc1471cbd03915e302c24efa2d2e7e52338d32b9bd7e695ca23e4998e85a9867304fdc41"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-linux-386.tar.gz",
+      "digest": {
+        "sha1": "a9e6b3f829f7b840f9fa4f77d22de0f9aa5db5bb",
+        "sha256": "6185b53533837a036773025493277d88d5c66e74dc3dbfd128edc76aba8789cb",
+        "sha512": "edbaadef535adcb7e3162819c3696bafb5503068de57d303e4c253272fcaaf097a5fbd42dc458c856f27676a8423e861d8b196b9a50575a5edf66bd455686ed9"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-proxy",
+      "digest": {
+        "sha1": "afcf7dfef467e76bd1701d88e1a1a6417cb84490",
+        "sha256": "702c9a73fc8e86ad86e5558a5601f9b21ff75f1ab1886fcbea1aadedbb3ea309",
+        "sha512": "49657120600055fd66f0a9d0c98e9157a72ef507cf4b5cb796782756bf4ec62f0385028881e69a6a1fec2be737a15298b6832ef5696493b4ca21c45ff2201c65"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-proxy",
+      "digest": {
+        "sha1": "ac2a03b887f30bd8ff7eba98db05fbac7753da1a",
+        "sha256": "81b7f86f5102b482ebc740931e211ab021ec9db33d98022cdf5b88a315e89151",
+        "sha512": "eccdf8d8f15a23a68d50fd330f50488f7471ad9c695e9328fd31782fd5d6d170d14c9b8b8de37161b84728fbbe15d0ef9afb294d24ff563718f002a79a040178"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/apiextensions-apiserver",
+      "digest": {
+        "sha1": "711d790cf1f4ba39573635d948b3399daf964bc6",
+        "sha256": "3c9515e1cd2a20f24eff1764f172ed8d1f664c2cefe8df70a704d1ce18cc62e1",
+        "sha512": "341e54442775f1a65dfe7e82192b898cec6971ea1fdd2aeef00f79983ee82bc229471f0b6167059b8356ba3c3995e2a175507f96175b7ac8caef7c47d185f2d4"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-windows-amd64.tar.gz",
+      "digest": {
+        "sha1": "4fcac7ff599496f87c7c7a9727850eb670271d9c",
+        "sha256": "74db902de00dc54dc4f78c897278ee3dd7ad62abb244dc810efb8eccd69672c4",
+        "sha512": "3f46843b5b4d1fcce2ebd6f5e5257fdca418b7b2f5fb50ebddc973c39b45f5fbb8ac911d233d7342e270e68dec4d9b30b4c652909a769527dd089ba251ed3813"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/windows/amd64/kube-proxy.exe",
+      "digest": {
+        "sha1": "759664e3bf18663add1110fe35cc370fea94af35",
+        "sha256": "bdd6fdf0aa6da649d1aaf34c3050e85599c491fbfc8a7e0c08545f53d20c939b",
+        "sha512": "44caf4050040a7adbd6102a33cc7b09649f9521c2495c50cc23d32394bb8728e3f1af35c959df60f3e8a0bedbc8c78e66037b3f499cc1e63524b34dd399e1f6c"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-controller-manager",
+      "digest": {
+        "sha1": "e09e2f043828266e6c9a9223d0309dbbf1779b10",
+        "sha256": "2a5a4c5aeb26334ac8981f91023623c5dec71721a01af57846ccb8651fff2b46",
+        "sha512": "7135fa363a1aeb00ffdb5255f1f0b15b0bba0ef61d2d275b1a9fb2ab91a6d6f3b81e1bb8afb8fee1dcf8b3909642d141f97d64575fa92ee62a89396acea5582f"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/mounter",
+      "digest": {
+        "sha1": "3ab40e32769ab78b18d84bb94ec74fb1fb1ed06e",
+        "sha256": "e2a18fc718d63cc694649b395bdd8f90c8155cadcbeffd3361cb109eb266c8b3",
+        "sha512": "e05100e13bad35799f8459945eaa85f4c4592eb1c7f87f9ccd04dab73da0bdeb3093667dfbdba2074d9d743a86c8fa09af63de597b2cb7847452d5981e683d5a"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-controller-manager",
+      "digest": {
+        "sha1": "e1ee3deeb1b2f8f4f9bbb389847be1c4e0fa9130",
+        "sha256": "a4b1209cc2aa7e8425d589d2d8a9f3db30c1f09ca798d2f45c85ceb6f56fb77e",
+        "sha512": "a173f514dda6478d61df0a55160e7ee3689b85eacf64bd4174701c535977d75eb6aa1d00c28bc3b2589734b8e6da29a9df30d11a692d8f45eb3d52dff37cbf81"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-linux-amd64.tar.gz",
+      "digest": {
+        "sha1": "e283d3e936f696e0aa433db20a87b24469cfa39e",
+        "sha256": "f255975525920672ad14684c3b47c3ed838d4a964454bd0bc7042ced740061c8",
+        "sha512": "297e9eefef91878c5810e2b4e0f8ad95cc5d961c814af88155b3357ce1e4b8efc3328b178221cb0ae50c0985bc2e48fc495151e6a22f83fdca2763db34a1bfa2"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/apiextensions-apiserver",
+      "digest": {
+        "sha1": "d3ae161a3e786b7092c26838a2e4b974b36312da",
+        "sha256": "5e2ba7e5b4ae18ba578424c2d25706eee4c10b21cf8769a1ce651161296f586e",
+        "sha512": "9734c83c54074458c2d6f6426b845511f43be96b2b11b3091cb41566adbc823b99763422f7c18d2fec963dde8823364611ebddf612651b56735866c753ee7736"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/apiextensions-apiserver",
+      "digest": {
+        "sha1": "f26d07434d8cd0f92b0dd08458828320609835d4",
+        "sha256": "6ccb0500847162f5ef4ac57b15a87f45086ffa9ec0cfc99402f2b15e0d112eeb",
+        "sha512": "46f570a48b9caec0e206ad86ecb437194f188a08ecd524c71b90d66009215b5512bf5a4839b9d3b98f5372f0ae65b691628da612aa0474de25dd83de16c1b058"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kubectl-convert",
+      "digest": {
+        "sha1": "873feaecc6f97a944caaa8b9f61a29f800ea7862",
+        "sha256": "71f99afc963111c14883424cb8f59954428f80d81d500293cfefc26d47262202",
+        "sha512": "f52f25d59b93a26052241fe63b762a691b5132033cddd5557f50762d69ddc9d1204747b905b692cd9d32e1a51846a7d13c3a4e02cb38c378b8dc92a7c96b5dab"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-windows-386.tar.gz",
+      "digest": {
+        "sha1": "39c1f03a71dd0b47f19dcfc76464b7d0d078b5c0",
+        "sha256": "b8b4471e7c99c1cf6db55a1c66f3dd88abe86d57659a27854d15f0c47bff99e6",
+        "sha512": "1298414d39e920dd9c0d807439cf2d84e5fa808a49505eb74f45e2b2a821bf3dbbcfdf568cee67d5a172f6b13477976a8bbda1336728141ec3b588ed8a8d0b90"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-windows-arm64.tar.gz",
+      "digest": {
+        "sha1": "8e6014ca12b626e8289492a53319f7fc91b0fe31",
+        "sha256": "dd8051c577ff1643217bb8517d1ce4236c37e4326a41adcd3a918f018a9a62ee",
+        "sha512": "875ce113eb96eb26d501fbc02c5a1b81542a8fd0e39622d768296c2019e66d4281eddf17284ecb958bab1a333e2d0011122af793a8647ca170f63548ae4b9924"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-linux-arm64.tar.gz",
+      "digest": {
+        "sha1": "690884cfcb51615dd414eee1e231fb0d7067a504",
+        "sha256": "fd8704c0e09734edc0a406dc8259a48b977b3476a7452961da9523d795456e76",
+        "sha512": "e53688a871fc6efd40a190b8101dc4c109abd3d5602ef3ae3c8b80d688ec06fa836dc9b7ff5992322537e418c1e7d1ed4f5d7cc738a88017657f22d2d0165c56"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-portable.tar.gz",
+      "digest": {
+        "sha1": "055277b1585e2b146908e9adf1448ce0a649ab4f",
+        "sha256": "745d605b01706c5adf053a70474ed5a934bb73dd9bbb96c1a73b61cb0839615f",
+        "sha512": "1a064a50339ae7e9714d99e6db8a71bc48beb7ce3bbac145ba5864fd974f9d5c627e1adadbed94212d8cd378f4d88b366e515878f62332cfaac8078b72d6507e"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kube-log-runner",
+      "digest": {
+        "sha1": "d4b57f91d6d0f257035507d8dc50971b03bfd612",
+        "sha256": "2a8e2e1855a34bcd7d2d19328eb56104d3e245ab900e932efd80d64b402d512a",
+        "sha512": "da7490a7eb3d8ea1c42b5a9de4e40101286aaf11cd7e105dcc437fb36690c12d7d0e5fbab0052e3dc5388ef4bd639300d9072bc2bd68c04252a8d82e93dc3851"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/386/kubectl-convert",
+      "digest": {
+        "sha1": "e749b6f4e1f3e0f2ec76a7355787aa6401cfe44e",
+        "sha256": "27996d10d459255e04eff17adbb8842ce67ab160e38770a89dd1858d522aef6d",
+        "sha512": "26cbc2632f11084670e06604ef258de8e1659eda0f39394dfa70ceccca0e0e7745606109f19f75d5412f9737e12da625b12fb77f04d3853a3a1241f2a3882c6b"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-scheduler",
+      "digest": {
+        "sha1": "477b91a765399f2e8f28a59c4e1030a55ec1a903",
+        "sha256": "87c3c19b3b2e2f04cc36a02e0a5ff802791f2f471e09efa26278dc228ebfa7ed",
+        "sha512": "b3a32d4b2c1828d2b0917279eedd69ee2f685844e2f85f4f115267332d27e3e0f253c91e51fbdc036150f9f1c92bf71566667601fc278973123d0a3058910e21"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/mounter",
+      "digest": {
+        "sha1": "aa0034b4ee23331833dd069837abd699b6793f78",
+        "sha256": "35ea2390ae46a25bd5dbc614200a5e060a7e966f03a1934758609ac6bb088f28",
+        "sha512": "d49db09d20706b1312cea7e05cda57dd5004aace3f1c5e347eef71fd6ac1b62eef514f1d848ad1ce729dec4afc04935aa1abc3267df1c6f64d6ebe00bb9ada98"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-src.tar.gz",
+      "digest": {
+        "sha1": "e99f1a32dbff910d413344ee635c219b5e84f882",
+        "sha256": "03dd7fe4593969add4567666eac6b3959541914a603b25f675dde5fdd7c51cc5",
+        "sha512": "fc950d3552fe92d6fca1e67d23c245bc598c78d2e7c13186f096072c23eaf4951e2b71ef7fb94b11638ec06a6065f4baa746f91f9ee4facd44c0dfe9753d3e62"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/amd64/kube-aggregator",
+      "digest": {
+        "sha1": "8ba645415a62a3749d769a9aa453983bc7f35577",
+        "sha256": "bfd2b63e42611b324ac94704c6fc1297bf2393d139f1716a7085696639dca581",
+        "sha512": "cb591692bf95bf6a83748ee4dcfcb2ff322ad74f148665e64b81ada8694e731136c5cb7fe594bdb0f6fbca3c74cc09049ec6dc6dede49c95ad257fb46f390195"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kubeadm",
+      "digest": {
+        "sha1": "5529d84460f7c8d4c88e13d70ab224e4517c7bd7",
+        "sha256": "e0c1510ab2ed1cd555abad6f226454a3206aaaf20474da7dcf976ddc86a065d4",
+        "sha512": "c5c4dd5779b372e047b274dbb17b985cc3d0a0b22da07ac41802579facf700c84b01b5a2238cf7bb5e26338e7249a6ae2789cfba3da07dcc7a65d727caf07b84"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-aggregator",
+      "digest": {
+        "sha1": "c53ce16cab1dcf0237a3fd2e43a5f1028a7c1f1f",
+        "sha256": "05bbbb34ff7d350bc69180709909c7f022e683fa759a9200b3c96fa5e8d87871",
+        "sha512": "e22e8d3a03427154079580378ba473116fd54e0eaac0fd2dfc8fc933efed74d9cfd66e8dac642f245c628a87c2f75b740c19e7e6e648b9d7b381969a81cf89ba"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-node-windows-amd64.tar.gz",
+      "digest": {
+        "sha1": "72c1e2a620383292a1efabb8be4a934b0cd84486",
+        "sha256": "8894a31c48f50294935be4784d9f0eba22315d55b24ee199f58149296bed01cf",
+        "sha512": "c68db3f75b545bd0f782a90302af031a3b69a1422582910aa07b3c4fd2e43b413087a289c1e78a9ff3330500095f18898e9c2368833780552e9597b43a99e3f0"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm64/kube-apiserver",
+      "digest": {
+        "sha1": "a31327595787387dc3892847d9bfca1285ec6ede",
+        "sha256": "056214e1dd426f75d60830d5a872a156aa0525edfbedd87af849827656f60881",
+        "sha512": "2dec026d1c53972b471ef65ce21fb71c977fec2c86b7d68cb7115c6b5d0f859d7f79d2cfab0c3abbd062c5bb09a90c523c3c3ec887d85048ea4530e02f4f3bc9"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-client-darwin-arm64.tar.gz",
+      "digest": {
+        "sha1": "8a336a4ef2611c4ecec3daf52a486e64425cb484",
+        "sha256": "e7cbe68cd853da28d66438e890258d292c19033657bd910cf458e94b6daa0932",
+        "sha512": "af6a655fb5c50abe3f3b2788b0cace8da55b2bcfc43547ff2114a14bf1ebb96ee7ddd4f5d8a0b37f0295d078f1066b88287811e4102e9751ec7e9edd8c703a19"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/arm/kube-proxy",
+      "digest": {
+        "sha1": "2a9a7871f327e8bc6cd6e287ae7b47793b35d88c",
+        "sha256": "ad73897708fb736ba0a2193bdf63ed6f23487a9b7c5dcbcad033d9110a09dc6d",
+        "sha512": "9e411a4ec74935cde895bf7c167ed42be738d8acb1d6c09c8f9dc40d20350e0cb7a876ab47028567063256367be373998e70d9162b4159b4a8e1310f3fdb1d9a"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/s390x/kubeadm",
+      "digest": {
+        "sha1": "33ab5e858eb9d4a2ed2ba439ae7ab118ce8027f9",
+        "sha256": "2d320dff9cca296f893deeb5be0a66c6c20718969c0c2eb8cfac9aa20d977f3d",
+        "sha512": "eea88d3476efa8bdd440e3ae1d504aaec6308a2d36ac1f2780f63af3f557bff489147ceaa87bb90ff4e6f029e863c1fe8cd8551bfc42ed1aef85fb87e8a090ae"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/kubernetes-test-linux-arm.tar.gz",
+      "digest": {
+        "sha1": "e4f9fa668ad368f7cc198dcd1cd4b3d35b273f8c",
+        "sha256": "30aeb3f94c4ce8025fcb53562c4392f4f5184306f08648365bfd2c21e746597e",
+        "sha512": "2960066affefb387acf585f27671064c5a8a891ba36a5a3d58dbff7a6ffe3b5b708d2d1908f188b95664df487a32b30b2baefed8d936b18e3a197bd78eb0a47c"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-log-runner",
+      "digest": {
+        "sha1": "6d7812238babd94e88fae067834ab32737fa63ea",
+        "sha256": "d16d93c4e9f7377900e0d51d65795cc6c6fc6f33e2408916f9921247e1a86a44",
+        "sha512": "8207489d7c5940921aab8dc5880133d67dc7b52f3801cb72be2b7af16c80b58d6ef10fd2efef02e1349c3b43e74d4ad37b2604ef07f8988dfb9a0661500ec616"
+      }
+    },
+    {
+      "name": "gs://kubernetes-release/release/v1.24.4/bin/linux/ppc64le/kube-scheduler",
+      "digest": {
+        "sha1": "14eaae0b856c3fbc1375d1ae308b3d62af1c8aad",
+        "sha256": "80f67ba20038146643048476905e47ec99b93ebb202dc99a0ed256e427079e69",
+        "sha512": "50494544b30519002026690117736d6b4ce7e3fa068266eaeca8fb716f4f2588c00e196887f17e482dabc4263299c47617c202cc80638c36126dc1adba2ee2e7"
+      }
+    }
+  ],
+  "predicate": {
+    "builder": {
+      "id": "https://git.k8s.io/release/docs/krel"
+    },
+    "buildType": "https://cloudbuild.googleapis.com/CloudBuildYaml@v1",
+    "invocation": {
+      "configSource": {
+        "entryPoint": "https://git.k8s.io/release/gcb/stage/cloudbuild.yaml"
+      },
+      "parameters": {
+        "branch": "release-1.24",
+        "build-version": "v1.24.4-rc.0.42+b83347ed618e02",
+        "nomock": "true",
+        "type": "official"
+      }
+    },
+    "metadata": {
+      "buildInvocationID": "51367b41-9a33-4e22-bf27-16f3db317719",
+      "buildStartedOn": "2022-08-17T18:42:45.89263802Z",
+      "buildFinishedOn": "2022-08-17T19:50:59.442347016Z",
+      "completeness": {
+        "parameters": true,
+        "environment": false,
+        "materials": true
+      },
+      "reproducible": false
+    },
+    "materials": [
+      {
+        "uri": "git+https://github.com/kubernetes/kubernetes",
+        "digest": {
+          "sha1": "'252935368ab67f38cb252df0a961a6dcb81d20eb'"
+        }
+      }
+    ]
+  }
+}
