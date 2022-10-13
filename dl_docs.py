@@ -6,17 +6,14 @@ BASE_PATH="docs/"
 scorecards_data= {
     "github.com/kubernetes/kubernetes": 
         [
-            "5835544ca568b757a8ecae5c153f317e5736700e",
-            "b39bf148cd654599a52e867485c02c4f9d28b312",
-            "c6939792865ef0f70f92006081690d77411c8ed5",
-            "1d79bc3bcccfba7466c44cc2055d6e7442e140ea",
-            "e4d4e1ab7cf1bf15273ef97303551b279f0920a9",
-            "e979822c185a14537054f15808a118d7fcce1d6e",
-            "dc2898b20c6bd9602ae1c3b51333e2e4640ed249",
-            "bccf857df03c5a99a35e34020b3b63055f0c12ec",
-            "a866cbe2e5bbaa01cfd5e969aa3e033f3282a8a2",
-            "95ee5ab382d64cfe6c28967f36b53970b8374491",
-            "7e54d50d3012cf3389e43b096ba35300f36e0817",
+            "aaf024b5e8dc5e08e4414583203968ca0a5ec043",
+            "3985f0a87ba4277b561e0cac9fba4f594eb8228a",
+            "140c27533044e9e00f800d3ad0517540e3e4ecad",
+            "252935368ab67f38cb252df0a961a6dcb81d20eb",
+            "3d3ac0431b6b56adc06a948a9aeb24757f643249",
+            "1ff66136acfd7717292f65447b2ebff162570f46",
+            "9ea33a8d02b38a2ac996f4328e7b1449f2cbc888",
+            "3c7da84d8fc03c30d3409e9c846ae4bc2de0b4d5",
         ]
 }
 
@@ -30,22 +27,6 @@ k8s_versions = [
     "v1.24.5",
     "v1.24.6",
     ]
-"""
-[
-    "v1.23.1",
-    "v1.23.2",
-    "v1.23.3",
-    "v1.23.4",
-    "v1.23.5",
-    "v1.23.6",
-    "v1.23.7",
-    "v1.23.8",
-    "v1.23.9",
-    "v1.23.10",
-    "v1.23.11",
-    "v1.23.12",
-]
-"""
 
 k8s_slsa_data = k8s_versions
 
@@ -88,9 +69,9 @@ def main():
     if not path.isdir(BASE_PATH):
         mkdir(BASE_PATH)
 
+    do_scorecards()
     do_spdx()
     do_k8s_slsa()
-    do_scorecards()
 
 def do_scorecards():
     subpath = path.join(BASE_PATH, "scorecard")
