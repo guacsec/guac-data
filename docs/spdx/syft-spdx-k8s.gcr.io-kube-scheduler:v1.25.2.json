@@ -3,7 +3,7 @@
   "name": "k8s.gcr.io/kube-scheduler-v1.25.2",
   "spdxVersion": "SPDX-2.2",
   "creationInfo": {
-    "created": "2022-10-11T20:23:44.461621Z",
+    "created": "2022-10-15T14:04:19.737792Z",
     "creators": [
       "Organization: Anchore, Inc",
       "Tool: syft-0.57.0"
@@ -11,7 +11,7 @@
     "licenseListVersion": "3.18"
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-scheduler-v1.25.2-26ae185e-8326-4a8c-943a-396ccecd1bc4",
+  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-scheduler-v1.25.2-de48be9c-e6ca-4c3a-aa42-1e5f95bc9261",
   "packages": [
     {
       "SPDXID": "SPDXRef-e86c9337d6479195",

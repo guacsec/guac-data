@@ -3,7 +3,7 @@
   "name": "k8s.gcr.io/kube-proxy-v1.24.6",
   "spdxVersion": "SPDX-2.2",
   "creationInfo": {
-    "created": "2022-10-11T20:21:46.350515Z",
+    "created": "2022-10-15T14:03:20.116861Z",
     "creators": [
       "Organization: Anchore, Inc",
       "Tool: syft-0.57.0"
@@ -11,7 +11,7 @@
     "licenseListVersion": "3.18"
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-proxy-v1.24.6-56c387ee-c11e-4ae8-bd48-30e11dae50d5",
+  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-proxy-v1.24.6-8854096d-ed3d-48f0-961e-5b9fa7dbdca3",
   "packages": [
     {
       "SPDXID": "SPDXRef-b0ff9e339291e57b",

@@ -3,7 +3,7 @@
   "name": "k8s.gcr.io/kube-controller-manager-v1.25.2",
   "spdxVersion": "SPDX-2.2",
   "creationInfo": {
-    "created": "2022-10-11T20:21:53.189409Z",
+    "created": "2022-10-15T14:03:23.774223Z",
     "creators": [
       "Organization: Anchore, Inc",
       "Tool: syft-0.57.0"
@@ -11,7 +11,7 @@
     "licenseListVersion": "3.18"
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-controller-manager-v1.25.2-33b50676-c20e-4f58-9f54-25941e921ed8",
+  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-controller-manager-v1.25.2-4e9d7bcc-9302-4c72-9ddf-e341ef68e5f6",
   "packages": [
     {
       "SPDXID": "SPDXRef-2011d8ef9ea1be5",

@@ -3,7 +3,7 @@
   "name": "k8s.gcr.io/kube-apiserver-v1.24.3",
   "spdxVersion": "SPDX-2.2",
   "creationInfo": {
-    "created": "2022-10-11T20:23:19.587331Z",
+    "created": "2022-10-15T14:04:05.428823Z",
     "creators": [
       "Organization: Anchore, Inc",
       "Tool: syft-0.57.0"
@@ -11,7 +11,7 @@
     "licenseListVersion": "3.18"
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-apiserver-v1.24.3-b5444ab7-d8b2-4d7f-b011-b170da06e9fe",
+  "documentNamespace": "https://anchore.com/syft/image/k8s.gcr.io/kube-apiserver-v1.24.3-ab121740-6709-4b8b-9786-dd348e31757a",
   "packages": [
     {
       "SPDXID": "SPDXRef-e1f961694bdff5b0",

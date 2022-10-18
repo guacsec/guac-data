@@ -30,12 +30,37 @@ k8s_versions = [
 
 k8s_slsa_data = k8s_versions
 
-containers_data= {
+latest_tag = ["latest"]
+
+spdx_containers_data= {
+        # kubernetes images
         "k8s.gcr.io/kube-proxy": k8s_versions,
         "k8s.gcr.io/kube-controller-manager": k8s_versions,
         "k8s.gcr.io/kube-apiserver": k8s_versions,
         "k8s.gcr.io/kube-scheduler": k8s_versions,
 }
+
+cyclonedx_containers_data= {
+        "docker.io/library/alpine": latest_tag,
+        "docker.io/library/bash": latest_tag,
+        "docker.io/library/busybox": latest_tag,
+        "docker.io/library/caddy": latest_tag,
+        "docker.io/library/composer": latest_tag,
+        "docker.io/library/consul": latest_tag,
+        "docker.io/library/debian": latest_tag,
+        "docker.io/library/docker": latest_tag,
+        "docker.io/library/haproxy": latest_tag,
+        "docker.io/library/httpd": latest_tag,
+        "docker.io/library/memcached": latest_tag,
+        "docker.io/library/nginx": latest_tag,
+        "docker.io/library/postgres": latest_tag,
+        "docker.io/library/python": latest_tag,
+        "docker.io/library/rabbitmq": latest_tag,
+        "docker.io/library/redis": latest_tag,
+        "docker.io/library/ubuntu": latest_tag,
+        "docker.io/library/vault": latest_tag,
+}
+
 
 def scorecard_cmd(repo, commit, fdir):
     fpath = path.join(fdir, 'scorecard-{}-{}.json'.format(repo.split('/')[-1], commit))
@@ -64,14 +89,25 @@ def syft_spdx_cmd(container_path, tag, fdir):
     subprocess.call(cmd, shell=True, stdout=f)
     f.close()
 
+def syft_cyclonedx_cmd(container_path, tag, fdir):
+    fpath = path.join(fdir, 'syft-cyclonedx-{}:{}.json'.format(container_path.replace('/','-'), tag))
+    cmd = "syft -c config/syft.yaml packages {}:{} -o cyclonedx-json | jq".format(container_path, tag)
+    print_msg(fpath, cmd)
+
+    f= open(fpath, 'w')
+    subprocess.call(cmd, shell=True, stdout=f)
+    f.close()
+
+
 
 def main():
     if not path.isdir(BASE_PATH):
         mkdir(BASE_PATH)
 
-    do_scorecards()
-    do_spdx()
+    do_cyclonedx()
     do_k8s_slsa()
+    do_spdx()
+    do_scorecards()
 
 def do_scorecards():
     subpath = path.join(BASE_PATH, "scorecard")
@@ -96,9 +132,19 @@ def do_spdx():
     if not path.isdir(subpath):
         mkdir(subpath)
 
-    for container_path in containers_data:
-        for tag in containers_data[container_path]:
+    for container_path in spdx_containers_data:
+        for tag in spdx_containers_data[container_path]:
             syft_spdx_cmd(container_path, tag, subpath)
+
+def do_cyclonedx():
+    subpath = path.join(BASE_PATH, "cyclonedx")
+    if not path.isdir(subpath):
+        mkdir(subpath)
+
+    for container_path in cyclonedx_containers_data:
+        for tag in cyclonedx_containers_data[container_path]:
+            syft_spdx_cmd(container_path, tag, subpath)
+
 
 
 def print_msg(path, cmd):
