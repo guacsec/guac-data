@@ -1,10 +1,11 @@
 import subprocess
+import argparse
 from os import path, mkdir
 
-BASE_PATH="docs/"
+BASE_PATH = "docs/"
 
-scorecards_data= {
-    "github.com/kubernetes/kubernetes": 
+scorecards_data = {
+    "github.com/kubernetes/kubernetes":
         [
             "aaf024b5e8dc5e08e4414583203968ca0a5ec043",
             "3985f0a87ba4277b561e0cac9fba4f594eb8228a",
@@ -61,32 +62,41 @@ cyclonedx_containers_data= {
         "docker.io/library/vault": latest_tag,
 }
 
-
 def scorecard_cmd(repo, commit, fdir):
-    fpath = path.join(fdir, 'scorecard-{}-{}.json'.format(repo.split('/')[-1], commit))
-    cmd = ' '.join(["scorecard", "--repo={}".format(repo), "--commit={}".format(commit), "--format=json"])
-    print_msg(fpath, cmd)
+    fpath = path.join(
+        fdir, 'scorecard-{}-{}.json'.format(repo.split('/')[-1], commit))
+    cmd = ["scorecard",
+           "--repo={}".format(repo), "--commit={}".format(commit), "--format=json"]
+    print_msg(fpath, ' '.join(cmd))
 
     f = open(fpath, 'w')
-    subprocess.call(cmd,shell=True, stdout=f)
+    subprocess.run(cmd, stdout=f)
     f.close()
+
 
 def kube_slsa_cmd(version, fdir):
     fpath = path.join(fdir, 'kube-slsa-{}.json'.format(version))
-    cmd = "curl -sL https://dl.k8s.io/release/{}/provenance.json | jq".format(version)
-    print_msg(fpath, cmd)
-
-    f= open(fpath, 'w')
-    subprocess.call(cmd, shell=True, stdout=f)
+    cmd1 = ["curl", "-s", "-L",
+            "https://dl.k8s.io/release/{}/provenance.json".format(version)]
+    cmd2 = ["jq"]
+    print_msg(fpath, [cmd1, cmd2])
+    f = open(fpath, 'w')
+    p1 = subprocess.Popen(cmd1, stdout=subprocess.PIPE)
+    subprocess.run(cmd2, stdin=p1.stdout, stdout=f)
     f.close()
 
-def syft_spdx_cmd(container_path, tag, fdir):
-    fpath = path.join(fdir, 'syft-spdx-{}:{}.json'.format(container_path.replace('/','-'), tag))
-    cmd = "syft -c config/syft.yaml packages {}:{} -o spdx-json | jq".format(container_path, tag)
-    print_msg(fpath, cmd)
 
-    f= open(fpath, 'w')
-    subprocess.call(cmd, shell=True, stdout=f)
+def syft_spdx_cmd(container_path, tag, fdir):
+    fpath = path.join(
+        fdir, 'syft-spdx-{}:{}.json'.format(container_path.replace('/', '-'), tag))
+    cmd1 = ["syft", "-c", "config/syft.yaml", "packages",
+            "{}:{}".format(container_path, tag), "-o", "spdx-json"]
+    cmd2 = ["jq"]
+    print_msg(fpath, [cmd1, cmd2])
+    p1 = subprocess.Popen(cmd1, stdout=subprocess.PIPE)
+
+    f = open(fpath, 'w')
+    subprocess.run(cmd2, stdin=p1.stdout, stdout=f)
     f.close()
 
 def syft_cyclonedx_cmd(container_path, tag, fdir):
@@ -100,7 +110,7 @@ def syft_cyclonedx_cmd(container_path, tag, fdir):
 
 
 
-def main():
+def run_all():
     if not path.isdir(BASE_PATH):
         mkdir(BASE_PATH)
 
@@ -109,6 +119,7 @@ def main():
     do_spdx()
     do_scorecards()
 
+
 def do_scorecards():
     subpath = path.join(BASE_PATH, "scorecard")
     if not path.isdir(subpath):
@@ -116,7 +127,8 @@ def do_scorecards():
 
     for repo in scorecards_data:
         for commit in scorecards_data[repo]:
-            scorecard_cmd(repo,commit,subpath)
+            scorecard_cmd(repo, commit, subpath)
+
 
 def do_k8s_slsa():
     subpath = path.join(BASE_PATH, "slsa")
@@ -147,8 +159,24 @@ def do_cyclonedx():
 
 
 
+
+commands = {
+    "k8s_slsa": do_k8s_slsa,
+    "scorecards": do_scorecards,
+    "spdx": do_spdx,
+    "all": run_all
+}
+
 def print_msg(path, cmd):
     print("creating file: {}, cmd: {}".format(path, cmd))
 
+
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--all", action="store_true")
+    subparser = parser.add_subparsers(dest="command")
+    for k in commands.keys():
+        subparser.add_parser(k)
+    args = parser.parse_args()
+
+    commands[args.command]()
