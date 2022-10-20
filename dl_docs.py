@@ -143,7 +143,7 @@ def do_cyclonedx():
 
     for container_path in cyclonedx_containers_data:
         for tag in cyclonedx_containers_data[container_path]:
-            syft_spdx_cmd(container_path, tag, subpath)
+            syft_cyclonedx_cmd(container_path, tag, subpath)
 
 
 
