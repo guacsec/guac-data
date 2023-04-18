@@ -1,6 +1,6 @@
 {
  "SPDXID": "SPDXRef-DOCUMENT",
- "name": "ppatel1989/vul-image-latest",
+ "name": "ghcr.io/guacsec/vul-image-latest",
  "spdxVersion": "SPDX-2.2",
  "creationInfo": {
   "created": "2022-10-19T17:29:41.243562Z",
@@ -11,7 +11,7 @@
   "licenseListVersion": "3.18"
  },
  "dataLicense": "CC0-1.0",
- "documentNamespace": "https://anchore.com/syft/image/ppatel1989/vul-image-latest-6fd9de7b-9bec-4ae7-99d9-4b5e5ef6b869",
+ "documentNamespace": "https://anchore.com/syft/image/ghcr.io/guacsec/vul-image-latest-6fd9de7b-9bec-4ae7-99d9-4b5e5ef6b869",
  "packages": [
   {
    "SPDXID": "SPDXRef-ced234abe3d35b0c",
