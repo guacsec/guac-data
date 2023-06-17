@@ -81,7 +81,7 @@ def kube_slsa_cmd(version, fdir):
     f.close()
 
 def syft_spdx_cmd(container_path, tag, fdir):
-    fpath = path.join(fdir, 'syft-spdx-{}:{}.json'.format(container_path.replace('/','-'), tag))
+    fpath = path.join(fdir, 'syft-spdx-{}.{}.json'.format(container_path.replace('/','-'), tag))
     cmd = "syft -c config/syft.yaml packages {}:{} -o spdx-json | jq".format(container_path, tag)
     print_msg(fpath, cmd)
 
@@ -90,7 +90,7 @@ def syft_spdx_cmd(container_path, tag, fdir):
     f.close()
 
 def syft_cyclonedx_cmd(container_path, tag, fdir):
-    fpath = path.join(fdir, 'syft-cyclonedx-{}:{}.json'.format(container_path.replace('/','-'), tag))
+    fpath = path.join(fdir, 'syft-cyclonedx-{}.{}.json'.format(container_path.replace('/','-'), tag))
     cmd = "syft -c config/syft.yaml packages {}:{} -o cyclonedx-json | jq".format(container_path, tag)
     print_msg(fpath, cmd)
 
