@@ -1,0 +1,10 @@
+{
+	HasSourceAt(hasSourceAtSpec: {}) { 
+		source{
+			type namespaces{
+				namespace names{
+					 name } 
+			}
+		}
+	}
+}
