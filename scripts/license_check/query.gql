@@ -1,0 +1,22 @@
+{
+  CertifyLegal(certifyLegalSpec: {}) {
+    discoveredLicense
+    declaredLicense
+    subject {
+      ... on Package {
+        namespaces {
+          namespace names{
+            name
+          }
+        }
+      }
+      ... on Source {
+        namespaces {
+          namespace names{
+            name
+          }
+        }
+      }
+    }
+  }
+}
