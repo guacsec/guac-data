@@ -1,0 +1,3 @@
+.git*token
+.venv
+scripts/license_check/*csv
