@@ -5,20 +5,9 @@ import sys
 from gql import Client, gql
 from gql.transport.requests import RequestsHTTPTransport
 
-###
-#
-# Things you might need to change
-#
-###
-
 # Your GUAC GraphQL server
+# TODO: Change this to where your graphQL server is running
 GRAPHQL_SERVER = "http://localhost:8080/query"
-
-###
-#
-# Things you probably won't need to change
-#
-###
 
 def queryGuac():
     '''
@@ -53,12 +42,7 @@ def queryGuac():
     return licenseData
 
 def checkLicenses(licenseData):
-    '''
-    Comments go here
-    '''
-
     if sys.argv[1:]:
-        # Oh, you want me to write to a file? Okay!
         outfile = open(sys.argv[1], 'w', newline='')
         csvfile = csv.writer(outfile)
         csvfile.writerow(['Package', 'Declared', 'Discovered'])
@@ -68,10 +52,8 @@ def checkLicenses(licenseData):
         discoveredLicense = licenseData[entry][1]
         if declaredLicense != discoveredLicense:
             if sys.argv[1:]:
-                # Write to the file
                 csvfile.writerow([entry,declaredLicense, discoveredLicense])
             else:
-                # Okay, just print to STDOUT
                 print(entry)
                 print("\tDeclares: " + licenseData[entry][0])
                 print("\tDiscovered: "+ licenseData[entry][1])
